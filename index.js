@@ -8,12 +8,11 @@ const app = express();
 
     // TODO: Incoming messages route
     const port = process.env.PORT || 3000;
-    // app.post('/message', (req, res) => {
-    //     const data = req.body;
-    //     console.log(`Received message: \n ${data}`);
-    //     res.sendStatus(200);
+    app.get('/message', (req, res) => {
+     
+        res.send("Welcom")
 
-    // })
+    })
 
 
     // TODO: Delivery reports route
